@@ -12,7 +12,7 @@ class Section(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     parent = models.ForeignKey('self',null=True,blank=True,on_delete=models.CASCADE,related_name='children',default=None)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True,default=None)
 
     def __str__(self):
         return(self.title)

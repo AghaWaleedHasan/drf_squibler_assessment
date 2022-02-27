@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'sections',
     'rest_framework.authtoken',
-    'dj_rest_auth', # new
 ]
 
 MIDDLEWARE = [
@@ -146,5 +145,4 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication', # new
         'rest_framework.authentication.SessionAuthentication', # new
     ],
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
